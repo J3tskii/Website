@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MechX-Sign-Up</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style-sign-up.css" />
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="signup-bg">
+        <img src="Photo/Background.png" alt="Engine Background" />
+      </div>
+
+      <div class="logo">
+        <img src="Photo/Logo-Vertical.png" alt="MechX Logo" />
+      </div>
+
+      <!-- Sign-Up Box -->
+      <div class="signup-box">
+        <!-- Form Section -->
+        <div class="signup-form">
+          <h2>Sign-Up</h2>
+          <p>Create Your Account to Get Started</p>
+          <form action="login-menu.html" method="POST">
+            <div class="input-group">
+              <i class="icon" data-feather="user"></i>
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <i class="icon" data-feather="mail"></i>
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+
+            <div class="input-group">
+              <i class="icon" data-feather="lock"></i>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <i class="icon" data-feather="lock"></i>
+              <input
+                type="password"
+                name="confirm-password"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+
+            <button type="submit" class="signup-btn">Sign-Up</button>
+          </form>
+
+          <!-- Alternative Sign-Up -->
+          <div class="alt-signup">
+            <p>
+              Sign-Up with Others, or
+              <a href="login-menu.html">Login</a> to your Account
+            </p>
+            <button class="google-signup">
+              <img src="Photo/Google.png" alt="Google" /> Sign-Up With Google
+            </button>
+            <button class="facebook-signup">
+              <img src="Photo/Facebook.png" alt="Facebook" /> Sign-Up With
+              Facebook
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

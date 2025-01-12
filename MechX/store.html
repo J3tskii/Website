@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MechX</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style-store.css" />
+  </head>
+  <body>
+    <!-- Navbar-->
+    <nav class="navbar">
+      <a href="main-menu.html" class="navbar-logo"
+        ><img src="Photo/Logo.png" alt="Logo"
+      /></a>
+      <div class="navbar-nav">
+        <a href="fix-tool.html">Fix Tool</a>
+        <a href="community.html">Community</a>
+        <a href="store.html">Store</a>
+        <div class="search-bar">
+          <input type="text" placeholder="Find what you want..." />
+          <i data-feather="search"></i>
+        </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#"><i data-feather="shopping-cart"></i></a>
+        <a href="sign-up.html">Sign-Up</a>
+        <a href="#">|</a>
+        <a href="login-menu.html">Log-In</a>
+      </div>
+    </nav>
+    <!-- Head Description -->
+    <div class="container">
+      <div class="content">
+        <div class="square-border">
+          <img
+            src="Photo/background-border-fixtool.png"
+            alt="Step-by-Step Guide"
+          />
+        </div>
+        <div class="text-overlay">
+        <h1>Maintenance Gear & Essential Parts</h1>
+        <p>
+          Precision tools and spare parts for the best repair and maintenance
+          possible. We offer everything you need to get your machine or vehicle
+          back in top shape: comprehensive tool kits for cars, motorcycles,
+          drones, and more, along with genuine precision tools like iFixit
+          screwdrivers and specialized maintenance essentials such as engine
+          cleaning kits. Additionally, browse our wide selection of spare parts,
+          from car filters to drone propellers. Unsure what tools or parts you
+          need? Our detailed repair guides and maintenance manuals show you
+          exactly what to use, and you can consult our expert forum for advice
+          from professionals and fellow enthusiasts.
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="tool-category-section">
+      <aside class="tool-category">
+        <h3>Tool Category</h3>
+        <ul>
+          <li><a href="#" data-category="soldering">Soldering & Wiring</a></li>
+          <li><a href="#" data-category="tech-gear">Exclusive Tech Gear</a></li>
+          <li><a href="#" data-category="consumables">Consumables</a></li>
+          <li><a href="#" data-category="drivers">Drivers & Wrenches</a></li>
+          <li><a href="#" data-category="gripping">Gripping</a></li>
+          <li><a href="#" data-category="prying">Prying & Opening</a></li>
+          <li><a href="#" data-category="cleaning">Cleaning</a></li>
+          <li><a href="#" data-category="toolkits">Toolkits</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content Section -->
+      <div class="tool-content">
+        <!-- Tabs for Tool Kits -->
+        <div class="tool-tabs">
+          <button data-tab="pro-maintenance" class="active">Pro Maintenance Kits</button>
+          <button data-tab="all-in-one">All-in-One Repair Kits</button>
+          <button data-tab="organizers">Tool Organizers</button>
+        </div>
+
+        <!-- Tool Listings -->
+        <div class="tool-listing">
+          <div class="tool-item" data-category="pro-maintenance">
+            <div class="tool-image">
+              <img src="Photo/ultimate-care-kit.png" alt="Mech Ultimate Care Kit">
+            </div>  
+            <h4>Mech Ultimate Care Kit</h4>
+            <p>
+              The Ultimate Care Kit has everything you need to keep your vehicle in top condition, whether you're at home or on the road. This kit includes high-quality tools designed for precision maintenance and long-lasting performance. Ideal for both professionals and DIY enthusiasts alike.
+            </p>
+            <div class="tool-price">$200</div>
+            <button>View</button>
+          </div>
+
+          <!-- Duplicate Items (can add more dynamically using JS) -->
+          <div class="tool-item" data-category="all-in-one">
+            <div class="tool-image">
+              <img src="Photo/repair-kit.png" alt="All-in-One Repair Kit">
+            </div>
+            <h4>All-in-One Repair Kit</h4>
+            <p>
+              This repair kit is perfect for a variety of maintenance tasks. It features multi-functional tools for electronics, vehicles, and appliances.
+            </p>
+            <div class="tool-price">$150</div>
+            <button>View</button>
+          </div>
+
+          <div class="tool-item" data-category="organizers">
+            <div class="tool-image">
+              <img src="Photo/tool-organizer.png" alt="Tool Organizer Kit">
+            </div>
+            <h4>Tool Organizer Kit</h4>
+            <p>
+              Keep your tools organized with this premium organizer kit. It includes compartments for various tool types and sizes.
+            </p>
+            <div class="tool-price">$120</div>
+            <button>View</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- MechX Section -->
+        <div class="footer-column">
+          <h3>MechX</h3>
+          <ul>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#customer-support">Customer Support</a></li>
+            <li><a href="#discus-eb">Discus EB</a></li>
+            <li><a href="#careers">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Resource Section -->
+        <div class="footer-column">
+          <h3>Resource</h3>
+          <ul>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#participate">Participate</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Section -->
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#terms">Terms</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="footer-column">
+          <h3>Contact Us:</h3>
+          <div class="social-icons">
+            <a href="#fb"><i data-feather="facebook"></i></a>
+            <a href="#ig"><i data-feather="instagram"></i></a>
+            <a href="#X"><i data-feather="x"></i></a>
+            <a href="#Yt"><i data-feather="youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Logo Section -->
+        <div class="footer-column logo">
+          <a href="#">
+            <img src="Photo/Logo-Vertical.png" alt="MechX Logo" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

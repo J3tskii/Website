@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MechX-Login</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style-login-menu.css" />
+  </head>
+  <body>
+    <body>
+        <div class="login-container">
+          <div class="login-bg">
+            <img src="Photo/Background.png" alt="Engine Background">
+          </div>
+
+        <div class="logo">
+              <img src="Photo/Logo-Vertical.png" alt="MechX Logo">
+            </div>
+          <!-- Login Box -->
+          <div class="login-box">
+      
+            <!-- Form Section -->
+            <div class="login-form">
+              <h2>Log-in</h2>
+              <p>Log-in to Unlock More Features</p>
+              <form action="main-menu.html" method="POST">
+                <div class="input-group">
+                  <i class="icon" data-feather="user"></i>
+                  <input type="text" name="username" placeholder="Username" required>
+                </div>
+      
+                <div class="input-group">
+                  <i class="icon" data-feather="lock"></i>
+                  <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn" >Log-in</button>
+              </form>
+      
+              <!-- Alternative Logins -->
+              <div class="alt-login">
+                <p>Log-In with Others, <a href="sign-up.html">Sign-Up</a> if you Don’t have Account</p>
+                <button class="google-login">
+                  <img src="Photo/Google.png" alt="Google"> Log-In With Google
+                </button>
+                <button class="facebook-login">
+                  <img src="Photo/Facebook.png" alt="Facebook"> Log-In With Facebook
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>      
+
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
